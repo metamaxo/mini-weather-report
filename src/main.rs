@@ -112,14 +112,17 @@ async fn main() -> Result<(), anyhow::Error> {
     let args: Vec<String> = env::args().collect();
     // Fetch config
     let (key, mut city, mut country) = config::fetch_config()?;
-
+    let mut city_vec = Vec::new();
     // set mode
     let mut home_mode = true;
     // If args is "home", give home weather report, else give weather report for args.
     if !args.contains(&"home".to_string()) && args.len() > 2 {
         home_mode = false;
-        city = args[1].clone();
-        country = args[2].clone();
+        for arg in &args[1..(args.len() - 1)] {
+            city_vec.push(arg.to_string())
+        }
+        city = city_vec.join(" ");
+        country = args[args.len() - 1].clone();
     }
 
     // Get weather data, if not succesful, exit.

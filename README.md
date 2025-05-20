@@ -29,7 +29,7 @@ A small command-line tool for retrieving local or specified weather reports.
 2.  **Install the executable:**
 
     ```
-    sudo mv ./mini-weather-report/mini-weather-report /usr/local/bin/
+    sudo mv ./mini-weather-report/mini-weather-report /usr/bin/
     ```
 
     * This command moves the compiled binary to `/usr/local/bin/` so that it can be accessed from anywhere. You may need to adjust the destination directory based on your system and preferences.
