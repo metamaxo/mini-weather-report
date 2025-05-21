@@ -2,7 +2,7 @@
 
 A small command-line tool for retrieving local or specified weather reports.
 
-![Image](https://github.com/user-attachments/assets/528c5a89-e833-4524-ba91-4200c6fe91c9)
+![Image](https://github.com/user-attachments/assets/58d56db1-d176-4619-b122-230eb19c340d)
 
 ## Features
 
